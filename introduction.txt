@@ -1,0 +1,9 @@
+what is ecmascript?
+=> 
+
+
+How to execute JS?
+=> One can execute JS inside the browser console.
+=> one can also execute it by installed Node.js
+By this we can see the beauty of JS outside the browser.
+=> one can also execute js using <script> tag inside HTML head tag.
