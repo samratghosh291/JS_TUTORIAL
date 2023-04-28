@@ -116,12 +116,58 @@ console.log(Number.isNaN(NaN));  //true
 // (either literals or variables) as their operands and 
 // rturn a single numerical value. 
 
-console.log(3+3);   //6
+console.log(3+3);    //6
 console.log(10-5);   //5
 console.log(20/5);   //4
 console.log(3*4);    //12
 
-console.log("Remionder Operator: " + 81%8);
+console.log("Reminder Operator: " + 81%8);
+
+console.log("----------Unary Operator----------");
+
+// Increment and Decrement operator
+// Operator: x++ or ++x or x-- or --x
+// If used postfix, with operator operand (for example x++),
+//the increnment operator increments and returns the value before incrementing.
+
+// If used prefix, with operator before operand (for example x++),
+// the increment operator increments and returns the value after incrementing. 
+
+console.log("----Postfix------");
+
+
+var num =15;
+var newNum = num++ +5;
+
+console.log(num);  //16
+
+console.log(newNum); //15
+
+
+console.log("----Prefix------");
+
+// postfix increment operator means the expression is evaluated.
+// first using the original value of the variable and then the variable 
+// is incremented (increased). 
+
+
+var num =15;
+var newNum = ++num ;
+
+console.log(num);  //16
+
+console.log(newNum); //16
+
+// prefix increment operator means the variable is incremented first and then 
+// the expression is evaluated using the new value of the variable. 
+
+
+
+
+
+
+
+
 
 
 
