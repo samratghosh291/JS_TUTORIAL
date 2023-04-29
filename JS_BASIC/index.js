@@ -137,7 +137,7 @@ console.log("----Postfix------");
 
 
 var num =15;
-var newNum = num++ +5;
+var newNum = num++;
 
 console.log(num);  //16
 
@@ -163,12 +163,228 @@ console.log(newNum); //16
 
 
 
+console.log("3**5=(3*3*3*3*3)=243");
+console.log("10**-1=(1/10)=0.1");
+
+console.log("-----------Interview Question--------------");
+
+// 1.What is the difference b/w == and === ?
+
+var num_1 =5;
+var num_2='5';
+
+console.log(typeof(num_1));  //number
+console.log(typeof(num_2));  //string
+
+console.log(num_1==num_2);  //true ('==' checks only value)
+console.log(num_1===num_2); //false ('===' checkes calues with their datatype)
+
+console.log("----------control statement and loops-----------\n");
+
+// 1. if-else
+// 2. switch statement 
+// 3. while loop
+// 4. do-while loop
+// 5. for loop
+// 6. for in loop
+// 7. for of loop
+// 8. ternary operator
+
+// If....Else 
+ 
+var tomm = "rain";
+
+if(tomm=="rain"){
+    console.log('take a raincoat');
+}
+else{
+    console.log("don't need a raincoat\n");
+}
+
+//check wheather leap year or not
+
+var year = 2000;
+
+if(((year%4===0)&&(year %100!=0))||(year%400===0)){
+    console.log("Leap Year\n")
+}
+else{
+    console.log("Not a leap year\n");
+}
+
+
+//  What is truthy and flasy values in JS?
+
+//  we have total 5 falsy values in JS.
+//  That's are 0, " ", undefined, null, NaN, false** is false anyway 
+
+
+if(score =0){
+    console.log("OMG! We loss the game.\n");
+}
+else{
+    console.log("We won the game.\n");
+}
+
+
+if(""){
+    console.log("This is not a null string.\n");
+}
+else{
+    console.log("This is a null string.\n");
+}
+
+
+if(val=undefined){
+    console.log("This is not a undefined.\n");
+}
+else{
+    console.log("This is a undefined.\n");
+}
+
+if(val=NaN){
+    console.log("This is not a NaN.\n");
+}
+else{
+    console.log("This is a NaN.\n");
+}
+
+
+console.log("------TERNARY OPERATOR-----\n");
+
+var age =20;
+console.log((age>=18)?"You are eligable for vote\n":"You are not eligable for vote\n");
+
+
+console.log("------SWITCH CASE-----\n");
+
+//  Switch Statement 
+// Evaluate an expression, matching the expression value to a 
+// case clause, and executes statesments associated with the case.
+
+// 1st without break statement
+// Find the Area of circle, triangle, rectangle?
+// the with break statement 
+
+
+console.log("------Using (if....else)-----\n");
+
+
+var area = "rectangle";
+var PI = 3.142, l=5, b=4, r=3;
+
+if(area =="circle"){
+    console.log("The area of the circle is: "+PI*r**2+"\n");
+}
+else if(area=="triangle"){
+    console.log("The area of the triangle is: "+(l*b)/2+"\n");
+}
+else if(area == "rectangle"){
+    console.log("The area of the rectangle is: "+(l*b)+"\n");
+}
+else{
+    console.log("Enter the valid entry");
+}
+
+
+console.log("------Using Switch Case-----\n");
+
+var area_1="rectangle";
+var PI = 3.142, l=5, b=4, r=3;
+
+switch(area_1){
+    case 'circle':
+        console.log("The area of the circle is: "+PI*r**2+"\n");
+        break;
+    case 'triangle':
+        console.log("The area of the triangle is: "+(l*b)/2+"\n");
+        break;
+    case 'rectangle':
+        console.log("The area of the rectangle is: "+(l*b)+"\n");
+        break;
+    default:
+        console.log("Enter the valid entry");
+}
+
+
+console.log("------While Loop-----\n");
+
+var a_1=1;
+while(a_1<=10){
+    console.log(a_1);
+    a_1++;
+}
+
+console.log("------Do-While Loop-----\n");
+
+var a_2=1;
+do{
+    debugger;
+    console.log(a_2);
+    a_2++;
+}while(a_2<=10);
+
+console.log("------For Loop-----\n");
+
+for(var for_1=1;for_1<=10;for_1++){
+    console.log(for_1);
+}
+
+console.log("------Challenge time-----\n");
+
+// write a programe for print the multiplication table for 
+// 8,9,12,15.
+
+console.log("----MULTIPLICATION TABLE OF 8----");
+for(var a=1;a<=10;a++){
+    var tableOf= 8;
+    console.log(tableOf+" * "+a+" = "+(a*tableOf));
+}
+console.log("----MULTIPLICATION TABLE OF 9----");
+for(var a=1;a<=10;a++){
+    var tableOf= 9;
+    console.log(tableOf+" * "+a+" = "+(a*tableOf));
+}
+console.log("----MULTIPLICATION TABLE OF 12----");
+for(var a=1;a<=10;a++){
+    var tableOf= 12;
+    console.log(tableOf+" * "+a+" = "+(tableOf*12));
+}
+console.log("----MULTIPLICATION TABLE OF 15----");
+for(var a=1;a<=10;a++){
+    var tableOf= 15;
+    console.log(tableOf+" * "+a+" = "+(a*tableOf));
+}
+
+console.log("-----FUNCTION-------\n");
+
+
+// function is a group of code which can be use many times inside the programme.
+// It increases the reusability of the code.
 
 
 
+//function defination
+//function parameters are the real values passed to the function
+function sum(a,b){
+    console.log(a+b); 
+}
+
+//function call
+sum(30,20); //function arguments are the listed in the function defination.
 
 
+console.log("-----FUNCTION EXPRESSION-------\n");
+
+// ==> Function expression simply means creeate function 
+// and put it into the variable.
 
 
+function getSum(a,b){
+    return a+b; 
+}
 
+//function expression
+var funcExp=getSum(30,90); 
+console.log(funcExp);
 
