@@ -376,8 +376,8 @@ sum(30,20); //function arguments are the listed in the function defination.
 
 console.log("-----FUNCTION EXPRESSION-------\n");
 
-// ==> Function expression simply means creeate function 
-// and put it into the variable.
+// ==> Function expression simply means create 
+// function and put it into the variable.
 
 
 function getSum(a,b){
@@ -386,5 +386,26 @@ function getSum(a,b){
 
 //function expression
 var funcExp=getSum(30,90); 
+
 console.log(funcExp);
+
+
+console.log("-----ANONYMOUS FUNCTION-------\n");
+
+// A function expression is similar to and has same syntax 
+// as a function decleratio One can define "named"
+// fuction expressions (where the name of the expression might 
+// be used in the call stack for example)
+// or "anonymous" function expressions.
+
+var funEXP = function (a,b){
+    return a+b;
+}
+
+var sum1=funEXP(20,70);
+var sum2=funEXP(20,780);
+
+console.log(sum1>sum2);
+ 
+
 
