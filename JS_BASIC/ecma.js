@@ -106,14 +106,12 @@ function sum(){
 
 console.log("Fat Arrow Function\n");
 
-console.log(sum_1());
-const sum_1 =()=>{
-    let a=3,b=48;
-    let sum_1= (a+b);
-    return `The sum is ${sum_1}`;
+
+const addFun=(a,b)=>{
+    return (a+b);
 }
 
-
+console.log(`The sum is: ${addFun(3,7)}`);
 
 
 
