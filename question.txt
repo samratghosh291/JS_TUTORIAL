@@ -3,3 +3,17 @@
 
 
  1. const vs let vs var ???
+
+
+ 6. find the ans?
+ let a=3;
+ let b=2;
+ let c=1;
+ console.log(a>b>c);  //false
+ because,
+         a>b--> true===1
+         and then 1>c(1)---> false;
+
+
+7. Different between for..in and for..of loop?
+         
