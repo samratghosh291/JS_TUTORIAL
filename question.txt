@@ -18,3 +18,9 @@
 7. Different between for..in and for..of loop?
 8. Different between push() and unshift() in array method ?
 
+9. Add Dec at the end of an array?
+10. What is the return value of special method?
+11. Update march to March (update) ?
+12. Delete June from an array ?
+
+const months = ['Jan','march','April','June','July'];

@@ -135,3 +135,44 @@ console.log(veg);
 console.log(veg.pop());
 console.log(veg);
 
+
+console.log("--------Chellange Time--------\n");
+
+// 1. Add Dec at the end of an array?
+// 2. What is the return value of special method?
+// 3. Update march to March (update) ?
+// 4. Delete June from an array ?
+
+const months = ['Jan','march','April','June','July'];
+
+console.log("--------Splice method()--------\n");
+
+// Array.prototype.splice()
+//Add and/or removes elements from an array.
+
+// 1. Add Dec at the end of an array?
+// 2. What is the return value of special method?
+// 3. Update march to March (update) ?
+// 4. Delete June from an array ?
+
+// sol:1
+
+const newMonths1 =months.splice(months.length,0,'Dec');
+// console.log(months);
+
+//sol:2
+
+console.log(newMonths1);   //[]
+
+console.log(typeof(newMonths1));  //object
+//so it returs 
+
+// sol:3
+const newMonths2=months.splice(1,1,'March');
+console.log(months);
+
+
+
+
+
+console.log(newMonths2);   //[ 'march' ]
