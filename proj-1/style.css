@@ -1,0 +1,26 @@
+html,body{
+    
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-left: 50%;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+#count-el{
+    color: white;
+    font-size: 70px;
+
+}

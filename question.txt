@@ -24,3 +24,8 @@
 12. Delete June from an array ?
 
 const months = ['Jan','march','April','June','July'];
+
+
+
+13. Reduce() method
+14. map() method
