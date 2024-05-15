@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 600px;
+    width: 900px;
+    border: 2px solid red;
+    margin: 80px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .score{
+    border:2px solid green;
+    
+}
